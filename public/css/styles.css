@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+ h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #2c2c2c;
+}
+
+header, footer {
+  background: #111;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.artwork {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.artwork:hover {
+  transform: scale(1.02);
+}
+
+.artwork img {
+  width: 100%;
+  height: auto; /* Permite que se adapte a su altura real */
+  object-fit: contain; /* Asegura que toda la imagen se vea */
+  display: block;
+  margin: 0 auto;
+}
+
+
+.artwork-info {
+  padding: 1rem;
+}
+
+.bienvenida {
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.inicio img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+h1 {
+  color: #e5dddd; 
+  text-align: center;
+  margin-top: 30px;
+  font-size: 3rem;
+}

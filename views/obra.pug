@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h2= obra.titulo
+  img(src=obra.imagen, alt=obra.titulo, style='width:100%; max-width:600px; border-radius:12px; margin-bottom:1rem;')
+  p
+    strong Autor: 
+    | #{obra.autor}
+  p
+    strong Año: 
+    | #{obra.anio}
+  p
+    strong Descripción:
+  p= obra.descripcion
